@@ -6,6 +6,7 @@
   --foreground: #fff8f0;
   --devtext: #4ED7F1;
   --dev: #0f2027;
+  --deve:#1a2f38;
   --edit: #1c1c1c;
 }
 
@@ -40,4 +41,8 @@ body {
 
 .font-satisfy {
   font-family: var(--font-satisfy);
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -9,9 +9,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaAngleDown } from "react-icons/fa";
 const Home: React.FC = () => {
     return (
-        <>
+        <div className="h-auto lg:h-[710px] bg-dev" id="home">
 
-            <div className="bg-dev md:px-15 sm:px-5 px-5 pt-28 h-screen flex flex-col-reverse lg:flex-row justify-between ">
+            <div className="bg-dev md:px-15 sm:px-5 px-5 pt-24  flex flex-col-reverse lg:flex-row justify-between ">
 
 
                 <div className="text-center lg:text-left w-full lg:w-1/2 h-[400px] flex flex-col mt-12 gap-y-4">
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                             duration: 0.7,
                         }}
 
-                        className="font-sans text-sm sm:text-md md:text-lg">Crafting impactful, scalable web applications using modern technologies — driven by performance, real-time innovation, and user-focused solutions.</motion.p>
+                        className="font-sans text-sm sm:text-md md:text-lg">I'm a passionate full-stack developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I’m driven to contribute meaningfully to every project I work on.</motion.p>
                     <div className="text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
 
 
@@ -84,10 +84,8 @@ const Home: React.FC = () => {
 
 
             </div>
-            <a href="#about">
-                <FaAngleDown className="m-auto text-amber-50 text-3xl font-extralight mt-[-180px] animate-bounce hidden lg:block" />
-            </a>
-        </>
+            
+        </div>
     );
 }
 export default Home;
