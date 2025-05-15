@@ -1,0 +1,93 @@
+'use client'
+import React from "react";
+import Image from "next/image";
+import myphoto2 from '../../../public/myphoto2.png'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaAngleDown } from "react-icons/fa";
+const Home: React.FC = () => {
+    return (
+        <>
+
+            <div className="bg-dev md:px-15 sm:px-5 px-5 pt-28 h-screen flex flex-col-reverse lg:flex-row justify-between ">
+
+
+                <div className="text-center lg:text-left w-full lg:w-1/2 h-[400px] flex flex-col mt-12 gap-y-4">
+                    <motion.h2
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{
+                            duration: 0.4,
+                        }}
+
+                        className="text-[#4ED7F1] font-sans text-md sm:text-lg md:text-xl">Full Stack Engineer</motion.h2>
+                    <motion.h1
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{
+                            duration: 0.5,
+                        }}
+
+                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px]">I'm <span className="text-[#4ED7F1] font-satisfy">Sudipta</span> <span className="font-satisfy">Paul</span></motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{
+                            duration: 0.7,
+                        }}
+
+                        className="font-sans text-sm sm:text-md md:text-lg">Crafting impactful, scalable web applications using modern technologies — driven by performance, real-time innovation, and user-focused solutions.</motion.p>
+                    <div className="text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
+
+
+                        <motion.a
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.4,
+                            }}
+                            href="https://github.com/Sudipta077" target="_blank"><FaGithub title="GitHub Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                        </motion.a>
+                        <motion.a
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.6,
+                            }}
+                            href="https://www.linkedin.com/in/sudipta-paul-106564226/" target="_blank">
+                            <FaLinkedin title="Linedin Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                        </motion.a>
+                        <motion.a
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.8,
+                            }}
+                            href="https://x.com/Sudipta20459564" target="_blank">
+                            <FaXTwitter title="X Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                        </motion.a>
+
+                    </div>
+                </div>
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 0.7,
+                    }}
+                    className="w-full lg:w-1/2 flex object-cover justify-center lg:justify-end ">
+                    <Image src={myphoto2} alt="Profile picture" height={1000} width={500} className="md:h-[500px] md:w-[500px] sm:h-[300px] sm:w-[300px] h-[300px] w-[300px]" />
+                </motion.div>
+
+
+
+            </div>
+            <a href="#about">
+                <FaAngleDown className="m-auto text-amber-50 text-3xl font-extralight mt-[-180px] animate-bounce hidden lg:block" />
+            </a>
+        </>
+    );
+}
+export default Home;

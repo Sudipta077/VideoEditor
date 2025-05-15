@@ -1,9 +1,12 @@
-import Image from "next/image";
-
-export default function Home() {
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+export default function Page() {
   return (
-    <>
-      hi
-    </>
+    <div className="min-h-screen">
+      <Navbar />
+      <Home/>
+      <About/>
+    </div>
   );
 }

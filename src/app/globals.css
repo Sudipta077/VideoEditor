@@ -1,8 +1,12 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Satisfy&display=swap');
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #fff8f0;
+  --devtext: #4ED7F1;
+  --dev: #0f2027;
+  --edit: #1c1c1c;
 }
 
 @theme inline {
@@ -10,17 +14,30 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-dev: var(--dev);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --devtext:var(--devtext);
+    --dev: #0f2027;
+    --edit: #1c1c1c;
+
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+}
+
+.font-anton {
+  font-family: var(--font-anton);
+}
+
+.font-satisfy {
+  font-family: var(--font-satisfy);
 }
