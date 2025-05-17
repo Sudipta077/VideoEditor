@@ -81,6 +81,23 @@ const Navbar: React.FC = () => {
                         </li>
 
                         <li
+                            onClick={() => handleScrollToSection('experience')}
+                            className={`group flex items-center space-x-1 cursor-pointer ${activeSection === 'experience' ? 'text-[#4ED7F1]' : ''
+                                }`}
+                        >
+                            <span className="text-2xl group-hover:text-[#4ED7F1]">[</span>
+                            <span className={`text-2xl transform transition-transform duration-300 group-hover:translate-x-22 group-hover:text-[#4ED7F1]
+            ${activeSection === 'experience' ? 'translate-x-16' : ''}`}>
+                                ]
+                            </span>
+                            <span className={`group-hover:translate-x-[-18px] transform transition-transform duration-300 group-hover:text-[#4ED7F1] mt-1 ml-2
+            ${activeSection === 'experience' ? 'translate-x-[-20px]' : ''}`}>
+                                Experience
+                            </span>
+                        </li>
+
+
+                        <li
                             onClick={() => handleScrollToSection('projects')}
                             className={`group flex items-center space-x-1 cursor-pointer ${activeSection === 'projects' ? 'text-[#4ED7F1]' : ''
                                 }`}
@@ -162,6 +179,7 @@ const Navbar: React.FC = () => {
                         <ul className="space-y-6 textlg sm:text-lg md:text-xl">
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#home">Home</a></li>
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#skills">Skills</a></li>
+                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#experience">Experience</a></li>
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#projects">Projects</a></li>
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#contact">Contact</a></li>
                         </ul>

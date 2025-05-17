@@ -5,19 +5,24 @@ import myphoto2 from '../../../public/myphoto2.png'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useInView } from 'react-intersection-observer';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaAngleDown } from "react-icons/fa";
-const Home: React.FC = () => {
-    return (
-        <div className="h-auto lg:h-[710px] bg-dev" id="home">
 
-            <div className="bg-dev md:px-15 sm:px-5 px-5 pt-24  flex flex-col-reverse lg:flex-row justify-between ">
+const Home: React.FC = () => {
+     const { ref, inView } = useInView({
+    triggerOnce: false, // animate only once
+    threshold: 0.1,     // when 10% of the component is visible
+  });
+    return (
+        <div className="h-auto lg:h-[710px] bg-dev" id="home" ref={ref}>
+
+            <div className="bg-dev md:px-15 sm:px-5 px-5 pt-24  flex flex-col-reverse lg:flex-row justify-between items-center">
 
 
                 <div className="text-center lg:text-left w-full lg:w-1/2 h-[400px] flex flex-col mt-12 gap-y-4">
                     <motion.h2
                         initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ?{ opacity: 1, x: 0 }:{}}
                         transition={{
                             duration: 0.4,
                         }}
@@ -25,7 +30,7 @@ const Home: React.FC = () => {
                         className="text-[#4ED7F1] font-sans text-md sm:text-lg md:text-xl">Full Stack Engineer</motion.h2>
                     <motion.h1
                         initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ?{ opacity: 1, x: 0 }:{}}
                         transition={{
                             duration: 0.5,
                         }}
@@ -33,7 +38,7 @@ const Home: React.FC = () => {
                         className="text-4xl sm:text-4g md:text-7xl mt-[-12px]">I'm <span className="text-[#4ED7F1] font-satisfy">Sudipta</span> <span className="font-satisfy">Paul</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ?{ opacity: 1, x: 0 }:{}}
                         transition={{
                             duration: 0.7,
                         }}
@@ -44,7 +49,7 @@ const Home: React.FC = () => {
 
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={inView ?{ opacity: 1, y: 0 }:{}}
                             transition={{
                                 duration: 0.4,
                             }}
@@ -52,7 +57,7 @@ const Home: React.FC = () => {
                         </motion.a>
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={inView ?{ opacity: 1, y: 0 }:{}}
                             transition={{
                                 duration: 0.6,
                             }}
@@ -61,7 +66,7 @@ const Home: React.FC = () => {
                         </motion.a>
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={inView ?{ opacity: 1, y: 0 }:{}}
                             transition={{
                                 duration: 0.8,
                             }}
@@ -73,7 +78,7 @@ const Home: React.FC = () => {
                 </div>
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    animate={inView ?{ opacity: 1, x: 0 }:{}}
                     transition={{
                         duration: 0.7,
                     }}
