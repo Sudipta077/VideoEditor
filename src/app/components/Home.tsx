@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useInView } from 'react-intersection-observer';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion} from 'framer-motion';
 
 const Home: React.FC = () => {
      const { ref, inView } = useInView({
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
                             duration: 0.5,
                         }}
 
-                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px]">I'm <span className="text-[#4ED7F1] font-satisfy">Sudipta</span> <span className="font-satisfy">Paul</span></motion.h1>
+                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px]">I am <span className="text-[#4ED7F1] font-satisfy">Sudipta</span> <span className="font-satisfy">Paul</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
                         animate={inView ?{ opacity: 1, x: 0 }:{}}
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                             duration: 0.7,
                         }}
 
-                        className="font-sans text-sm sm:text-md md:text-lg">I'm a passionate full-stack developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I’m driven to contribute meaningfully to every project I work on.</motion.p>
+                        className="font-sans text-sm sm:text-md md:text-lg">I am a passionate full-stack developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.</motion.p>
                     <div className="text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
 
 

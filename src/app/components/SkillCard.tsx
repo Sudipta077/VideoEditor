@@ -1,12 +1,28 @@
 'use client'
 import { motion } from 'framer-motion';
-
+import { IconType } from "react-icons"
 import "react-multi-carousel/lib/styles.css";
 
+interface Skill {
+  icon: IconType; 
+  name: string;
+  hoverColor: string;
+}
+
+// Whole item type (what each `item` looks like)
+interface SkillItem {
+  title: string;
+  icon: IconType;
+  skills: Skill[];
+}
 
 
+interface SkillCardProps {
+    item: SkillItem;
+    inView: boolean;
+}
 
-const SkillCard = ({ item,inView }: any) => {
+const SkillCard: React.FC<SkillCardProps> = ({ item, inView }) => {
 
     const Icon = item.icon;
     console.log(item);
@@ -27,7 +43,7 @@ const SkillCard = ({ item,inView }: any) => {
                 <div className='text-amber-50 text-base mt-5 flex flex-wrap gap-2'>
 
                     {
-                        item && item.skills && item.skills.map((data: any, key: any) => {
+                        item && item.skills && item.skills.map((data: Skill, key: number) => {
                             const Icon2 = data.icon;  // declare inside the block
                             return (
                                 <div

@@ -35,7 +35,6 @@ import { AiOutlineKubernetes } from "react-icons/ai";
 import { SiInternetcomputer } from "react-icons/si";
 import { SiGithubcopilot } from "react-icons/si";
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
-
 import { TbBrandReactNative } from "react-icons/tb";
 import { BsUbuntu } from "react-icons/bs";
 import { FaJava } from "react-icons/fa";
@@ -44,7 +43,21 @@ import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 import { SiCanva } from "react-icons/si";
-const skillCard: any[] = [
+import { IconType } from "react-icons"
+
+interface Skill {
+    icon: IconType; // For React icons
+    name: string;
+    hoverColor: string;
+}
+
+interface SkillCategory {
+    title: string;
+    icon: IconType; // For React icons
+    skills: Skill[];
+}
+
+const skillCard: SkillCategory[] = [
     {
         title: "Frontend",
         icon: MdOutlineLaptopMac,
@@ -109,6 +122,21 @@ const skillCard: any[] = [
             },
         ],
     },
+
+ {
+        title: "Database",
+        icon: BsDatabaseFillCheck,
+        skills: [
+
+            { icon: GrMysql, name: "MySQL", hoverColor: "hover:bg-blue-500" },
+            { icon: BiLogoPostgresql, name: "PostgreSQL", hoverColor: "hover:bg-orange-800" },
+            { icon: SiMongodb, name: "MongoDB", hoverColor: "hover:bg-green-500" },
+           
+
+
+        ],
+    },
+
     {
         title: "Mobile Application",
         icon: HiMiniDevicePhoneMobile,
