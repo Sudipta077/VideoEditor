@@ -41,13 +41,13 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <div className="backdrop-filter backdrop-blur-lg bg-opacity-0 fixed top-0 px-5 md:px-10 lg:px-15 text-amber-50 h-16 lg:h-24 py-4 md:py-10 w-full flex justify-between items-center">
+            <div className="z-100 backdrop-filter backdrop-blur-lg bg-opacity-0 fixed top-0 px-5 md:px-10 lg:px-15 text-amber-50 h-16 lg:h-20 py-4 md:py-10 w-full flex justify-between items-center">
                 <h1 className=" md:text-4xl sm:text-2xl text-xl font-anton text-amber-50">
                     Sudipta <span className="text-[#4ED7F1]">Paul</span>
                 </h1>
 
                 <nav className="hidden lg:flex">
-                    <ul className="flex items-center sm:gap-5 md:gap-8 gap-2 text-md">
+                    <ul className="flex items-center font-sans sm:gap-5 md:gap-8 gap-2 text-md">
                         <li
                             onClick={() => handleScrollToSection('home')}
                             className={`group flex items-center space-x-1 cursor-pointer ${activeSection === 'home' ? 'text-[#4ED7F1]' : ''
@@ -81,18 +81,18 @@ const Navbar: React.FC = () => {
                         </li>
 
                         <li
-                            onClick={() => handleScrollToSection('experience')}
-                            className={`group flex items-center space-x-1 cursor-pointer ${activeSection === 'experience' ? 'text-[#4ED7F1]' : ''
+                            onClick={() => handleScrollToSection('qualification')}
+                            className={`group flex items-center space-x-1 cursor-pointer ${activeSection === 'qualification' ? 'text-[#4ED7F1]' : ''
                                 }`}
                         >
                             <span className="text-2xl group-hover:text-[#4ED7F1]">[</span>
-                            <span className={`text-2xl transform transition-transform duration-300 group-hover:translate-x-22 group-hover:text-[#4ED7F1]
-            ${activeSection === 'experience' ? 'translate-x-16' : ''}`}>
+                            <span className={`text-2xl transform transition-transform duration-300 group-hover:translate-x-24 group-hover:text-[#4ED7F1]
+            ${activeSection === 'qualification' ? 'translate-x-24' : ''}`}>
                                 ]
                             </span>
-                            <span className={`group-hover:translate-x-[-18px] transform transition-transform duration-300 group-hover:text-[#4ED7F1] mt-1 ml-2
-            ${activeSection === 'experience' ? 'translate-x-[-20px]' : ''}`}>
-                                Experience
+                            <span className={`group-hover:translate-x-[-22px] transform transition-transform duration-300 group-hover:text-[#4ED7F1] mt-1 ml-2
+            ${activeSection === 'qualification' ? 'translate-x-[-22px]' : ''}`}>
+                                Qualification
                             </span>
                         </li>
 
@@ -179,7 +179,7 @@ const Navbar: React.FC = () => {
                         <ul className="space-y-6 textlg sm:text-lg md:text-xl">
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#home">Home</a></li>
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#skills">Skills</a></li>
-                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#experience">Experience</a></li>
+                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#qualification">Qualification</a></li>
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#projects">Projects</a></li>
                             <li className="cursor-pointer text-amber-50 font-sans"><a href="#contact">Contact</a></li>
                         </ul>
