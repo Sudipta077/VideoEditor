@@ -46,8 +46,8 @@ const Navbar: React.FC = () => {
                     Sudipta <span className="text-[#4ED7F1]">Paul</span>
                 </h1>
 
-                <nav className="hidden lg:flex">
-                    <ul className="flex items-center font-sans sm:gap-5 md:gap-8 gap-2 text-md">
+                <nav className="hidden lg:flex ">
+                    <ul className="flex items-center font-sans sm:gap-5 md:gap-4 gap-2 text-md">
                         <li
                             onClick={() => handleScrollToSection('home')}
                             className={`group flex items-center space-x-1 cursor-pointer ${activeSection === 'home' ? 'text-[#4ED7F1]' : ''

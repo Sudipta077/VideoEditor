@@ -1,9 +1,9 @@
 interface experience {
-    title: String,
-    organization: String,
-    start_date: String,
-    end_date: String,
-    description: String
+    title: string,
+    organization: string,
+    start_date: string,
+    end_date: string,
+    description: string
 }
 
 const devexp: experience[] = [
@@ -23,7 +23,7 @@ const devexp: experience[] = [
     }
 ]
 
-const education:any[]=[
+const education:experience[]=[
      {
         title:"Bachelor of Technology",
         organization:"Future Institute of Engineering and Management",

@@ -4,8 +4,7 @@ import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Carousel from "react-multi-carousel";
 import { software } from '../data/projects';
-import Image from 'next/image';
-import myphoto from '../../../public/myphoto.png'
+import ProjectCard from './ProjectCard';
 const Projects: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'experience' | 'education'>('experience');
     const { ref, inView } = useInView({
@@ -30,6 +29,16 @@ const Projects: React.FC = () => {
             partialVisibilityGutter: 0
         }
     };
+
+  interface ProjectCardProps {
+   
+        title: string;
+        image: string;
+        description: string[];
+        github: string;
+        deploy: string;
+
+}
 
     return (
         <div className="bg-[#1a2f38] h-auto pt-15 md:px-15 px-5 py-5 " ref={ref} id='projects'>
@@ -76,23 +85,11 @@ const Projects: React.FC = () => {
                 ssr={true}
                 autoPlaySpeed={3000}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
-                className='w-full h-[400px] z-10'
+                className='w-full h-[500px] z-10'
             >
                 {
-                    software && software.map((item: any, key: any) => (
-                        <div className='h-[500px] w-[90%] bg-dev '>
-                            <div className=' overflow-hidden h-[250px] object-bottom-right  w-full'>
-                                <Image
-                                    src={myphoto}
-                                    alt={item.title}
-                                    width={500}
-                                    height={550}
-                                    className='h-fit w-full'
-                                />
-                            </div>
-                            <h1 className='text-5xl text-black z-100'>{item.title}</h1>
-                        </div>
-
+                    software && software.map((item: ProjectCardProps, key: number) => (
+                        <ProjectCard item={item} key={key}/>
                     ))
                 }
             </Carousel>

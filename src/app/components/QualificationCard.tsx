@@ -1,9 +1,9 @@
 interface item{
-    title:String,
-        organization:String,
-        start_date:String,
-        end_date:String,
-        description:String
+    title:string,
+        organization:string,
+        start_date:string,
+        end_date:string,
+        description:string
 }
 
 interface ExperienceProps {
@@ -14,7 +14,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
 
         <div className="">
             {
-                data && data.map((data: any, key: number) => (
+                data && data.map((data: item, key: number) => (
                     <div className="mt-10 mb-5 border-b-[0.5px] border-gray-400 pb-5 font-sans" key={key}>
                         {/* You can replace with mapped experiences later */}
                         <div className="flex justify-between">

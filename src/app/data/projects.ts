@@ -1,5 +1,11 @@
-import myphoto from '../../../public/myphoto.png';
-const software: any[] = [
+interface Project {
+    title: string;
+    image: string; // Path to the image
+    description: string[]; // Array of description strings
+    github: string; // URL to the GitHub repository
+    deploy: string; // URL to the deployed project
+}
+const software: Project[] = [
     {
         title: "Real-Time Chat App",
         image: "../../../public/myphoto.png",
