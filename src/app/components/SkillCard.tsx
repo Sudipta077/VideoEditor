@@ -1,28 +1,26 @@
-'use client'
 import { motion } from 'framer-motion';
 import { IconType } from "react-icons"
 import "react-multi-carousel/lib/styles.css";
 
 interface Skill {
-  icon: IconType; 
-  name: string;
-  hoverColor: string;
+    icon: IconType;
+    name: string;
+    hoverColor: string;
 }
 
 // Whole item type (what each `item` looks like)
 interface SkillItem {
-  title: string;
-  icon: IconType;
-  skills: Skill[];
+    title: string;
+    icon: IconType;
+    skills: Skill[];
 }
 
 
 interface SkillCardProps {
     item: SkillItem;
-    inView: boolean;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ item, inView }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ item }) => {
 
     const Icon = item.icon;
     console.log(item);
@@ -31,7 +29,8 @@ const SkillCard: React.FC<SkillCardProps> = ({ item, inView }) => {
         <>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.6 }}
                 className='text-left font-sans p-5 text-lg sm:text-xl md:text-2xl bg-dev h-[350px] rounded-xl shadow-cyan-500/30 shadow-lg sm:shadow-xl w-full max-w-[85%] mx-auto'
             >

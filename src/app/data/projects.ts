@@ -7,55 +7,72 @@ interface Project {
 }
 const software: Project[] = [
     {
-        title: "Real-Time Chat App",
+        title: "Scalable Chatting App",
         image: "../../../public/myphoto.png",
         description: [
-            "Built using MERN stack, Socket.IO for real-time messaging.",
-            "Integrated Redis Pub/Sub and Kafka for scalability and fault-tolerant message queuing."
+            "Google Sign-In via Auth.js",
+            "Real-time chat with Socket.io",
+            "Redux used for state management",
+            "Scalable messaging using Redis, Kafka",
+            "AI replies powered by Gemini Flash"
         ],
-        github: "https://github.com/username/chat-app",
-        deploy: "https://chatapp.example.com"
+        github: "https://github.com/Sudipta077/chatfinity-frontend",
+        deploy: ""
     },
     {
         title: "E-Commerce Platform",
         image: "../../../public/myphoto.png",
         description: [
-            "Developed full-featured e-commerce app with cart, payment, and admin dashboard.",
-            "Used React, Express, MongoDB, Stripe API, and JWT-based auth."
+            "Built E-commerce app with clean UI",
+            "Added product browsing and filtering",
+            "Implemented role-based JWT auth",
+            "Created admin dashboard for management",
+            "Used MERN stack for development"
         ],
-        github: "https://github.com/username/ecommerce-platform",
-        deploy: "https://shop.example.com"
+        github: "https://github.com/Sudipta077/Cartify_2.0-main-main",
+        deploy: ""
     },
     {
-        title: "BlogHunch CMS",
+        title: "Anonymous messaging app",
         image: "../../../public/myphoto.png",
         description: [
-            "Custom CMS built for BlogHunch to manage posts, media, and authors.",
-            "Implemented role-based access and image uploads via AWS S3."
+            "Anonymous chat without user identity",
+            "AI suggests smart message replies",
+            "Built with clean, attractive UI",
+            "Secure Auth.js-based user handling",
+            "Stored messages with MongoDB backend"
         ],
-        github: "https://github.com/username/bloghunch-cms",
-        deploy: "https://bloghunch.example.com"
+        github: "https://github.com/Sudipta077/anonymous-messaging-app",
+        deploy: "https://anonymous-messaging-app-pied.vercel.app/login"
     },
     {
-        title: "Fitness Tracker App",
+        title: "Portfolio",
         image: "../../../public/myphoto.png",
         description: [
-            "Mobile app built with React Native to track workouts and progress.",
-            "Synced with backend using REST API and local SQLite for offline access."
+            "Showcased projects with clean layout",
+            "Animated transitions for smooth experience",
+            "Interactive and responsive home page",
+            "Built-in contact form with email support",
+            "Modern UI with professional design"
         ],
-        github: "https://github.com/username/fitness-tracker",
-        deploy: "https://fitnessapp.example.com"
-    },
-    {
-        title: "CourseHub – EdTech Platform",
-        image: "../../../public/myphoto.png",
-        description: [
-            "Frontend built using Next.js for BitByteBinary course platform.",
-            "Added new features, fixed bugs, and developed mobile version in React Native."
-        ],
-        github: "https://github.com/username/coursehub",
-        deploy: "https://bitbytebinary.com"
+        github: "https://github.com/Sudipta077/SharmitaMondalWebsite",
+        deploy: "https://sharmitamondal.netlify.app/"
     }
 ];
 
-export {software};
+const hardware: Project[] = [
+    {
+        title: "Fire Extinguisher Drone",
+        image: "../../../public/myphoto.png",
+        description: [
+            "Mid-size drone model FX-450",
+            "Carries up to 2kg payload",
+            "200-meter remote operation range",
+            "30-minute maximum flight duration",
+        ],
+        github: "",
+        deploy: ""
+    },
+]
+
+export { software,hardware };

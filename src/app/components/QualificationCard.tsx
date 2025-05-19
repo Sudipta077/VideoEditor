@@ -1,9 +1,12 @@
-interface item{
-    title:string,
-        organization:string,
-        start_date:string,
-        end_date:string,
-        description:string
+import { motion } from 'framer-motion';
+
+
+interface item {
+    title: string,
+    organization: string,
+    start_date: string,
+    end_date: string,
+    description: string
 }
 
 interface ExperienceProps {
@@ -12,7 +15,13 @@ interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ data }) => {
     return (
 
-        <div className="">
+        <motion.div
+           initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.4 }}
+            className="">
             {
                 data && data.map((data: item, key: number) => (
                     <div className="mt-10 mb-5 border-b-[0.5px] border-gray-400 pb-5 font-sans" key={key}>
@@ -29,7 +38,7 @@ const Experience: React.FC<ExperienceProps> = ({ data }) => {
                 ))
             }
 
-        </div>
+        </motion.div>
     );
 }
 export default Experience;
