@@ -29,7 +29,8 @@ const About: React.FC = () => {
     return (
         <div
            
-            className='py-5 bg-[#1a2f38] sm:px-5 mx-0 pt-10 w-full'
+            className='py-5 bg-gradient-to-b from-[#0f2027] to-[#1a2f38]
+ sm:px-5 mx-0 pt-10 w-full'
             id='skills'
         >
             <motion.h1

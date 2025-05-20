@@ -6,11 +6,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from 'framer-motion';
-
+import { SiFiverr } from "react-icons/si";
+import { FaSquareUpwork } from "react-icons/fa6";
 const Home: React.FC = () => {
 
     return (
-        <div className="h-auto lg:h-[710px] bg-dev" id="home">
+        <div className="h-screen md:h-auto lg:h-[710px] bg-dev" id="home">
 
             <div className="bg-dev md:px-15 sm:px-5 px-5 pt-24  flex flex-col-reverse lg:flex-row justify-between items-center">
 
@@ -43,7 +44,7 @@ const Home: React.FC = () => {
                         }}
 
                         className="font-sans text-sm sm:text-md md:text-lg">I am a passionate full-stack developer focused on building impactful, user-centric web applications. With real-world experience delivering scalable and dynamic solutions, I strive to create seamless digital experiences. I value clean code, collaboration, and continuous learning, and I am driven to contribute meaningfully to every project I work on.</motion.p>
-                    <div className="text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
+                    <div className="items-center text-amber-50 text-4xl mx-auto lg:mx-0  lg:text-3xl flex gap-x-8">
 
 
                         <motion.a
@@ -57,8 +58,8 @@ const Home: React.FC = () => {
                         </motion.a>
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
-                             whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false,amount: 0.2  }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false, amount: 0.2 }}
                             transition={{
                                 duration: 0.6,
                             }}
@@ -67,21 +68,45 @@ const Home: React.FC = () => {
                         </motion.a>
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
-                             whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false,amount: 0.2  }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false, amount: 0.2 }}
                             transition={{
                                 duration: 0.8,
                             }}
                             href="https://x.com/Sudipta20459564" target="_blank">
-                            <FaXTwitter title="X Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                            <FaXTwitter title="X Profile" className=" hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
                         </motion.a>
+
+                        <motion.a
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false, amount: 0.2 }}
+                            transition={{
+                                duration: 0.8,
+                            }}
+                            href="https://www.fiverr.com/s/1qoQE50" target="_blank">
+                            <SiFiverr title="Fiverr Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce text-6xl" />
+                        </motion.a>
+
+
+                        <motion.a
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false, amount: 0.2 }}
+                            transition={{
+                                duration: 0.8,
+                            }}
+                            href="https://www.upwork.com/freelancers/~01b504ee86d4a07568?mp_source=share" target="_blank">
+                            <FaSquareUpwork title="Upwork Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce text-4xl" />
+                        </motion.a>
+
 
                     </div>
                 </div>
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false,amount: 0.2  }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     transition={{
                         duration: 0.7,
                     }}

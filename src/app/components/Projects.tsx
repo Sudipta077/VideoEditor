@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 
 
     return (
-        <div className="bg-[#1a2f38] h-auto pt-15 md:px-15 px-5 py-5 font-sans" ref={ref} id='projects'>
+        <div className="bg-gradient-to-b from-[#0f2027] to-[#1a2f38]  h-auto pt-15 md:px-15 px-5 py-5 font-sans" ref={ref} id='projects'>
             <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

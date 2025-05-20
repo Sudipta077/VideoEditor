@@ -9,7 +9,8 @@ const Qualification: React.FC = () => {
 
     const [activeTab, setActiveTab] = useState<'experience' | 'education'>('experience');
     return (
-        <div id="qualification" className="bg-dev h-auto pt-15 md:px-15 px-5 py-5 ">
+        <div id="qualification" className="bg-gradient-to-b from-[#1a2f38] to-[#0f2027] 
+ h-auto pt-15 md:px-15 px-5 py-5 ">
             <motion.h1
 
                 initial={{ opacity: 0, y: 50 }}

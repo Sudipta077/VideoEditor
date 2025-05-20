@@ -32,7 +32,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ item }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.6 }}
-                className='text-left font-sans p-5 text-lg sm:text-xl md:text-2xl bg-dev h-[350px] rounded-xl shadow-cyan-500/30 shadow-lg sm:shadow-xl w-full max-w-[85%] mx-auto'
+                className='text-left font-sans p-5 text-lg sm:text-xl md:text-2xl bg-dev h-[350px] rounded-xl shadow-cyan-500/30 shadow-lg sm:shadow-xl w-full max-w-[85%] mx-auto border-[0.5px] border-gray-600'
             >
                 <h1 className='text-xl md:text-xl text-amber-50 flex items-center gap-2'>
                     <Icon />
