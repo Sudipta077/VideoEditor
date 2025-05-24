@@ -38,7 +38,7 @@ const About: React.FC = () => {
                  whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false,amount: 0.2  }}
                 transition={{ duration: 0.4 }}
-                className='text-center text-3xl font-semibold text-shadow-2xs md:text-4xl lg:text-4xl'
+                className='text-amber-50 text-center text-3xl font-semibold text-shadow-2xs md:text-4xl lg:text-4xl'
             >
                 Ski<span className='text-[#4ED7F1]'>ll</span>s
             </motion.h1>

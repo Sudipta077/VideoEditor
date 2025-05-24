@@ -23,7 +23,7 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ item }) => {
 
     const Icon = item.icon;
-    console.log(item);
+   
 
     return (
         <>

@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
                 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.2 }}
-                className='text-center text-3xl font-semibold text-shadow-2xs md:text-4xl lg:text-4xl'
+                className='text-amber-50 text-center text-3xl font-semibold text-shadow-2xs md:text-4xl lg:text-4xl'
 
             >
                 Contact with <span className='text-[#4ED7F1]'>Me</span>

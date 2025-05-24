@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <div className="z-100 backdrop-filter backdrop-blur-lg bg-opacity-0 fixed top-0 px-5 md:px-10 lg:px-15 text-amber-50 h-16 lg:h-20 py-4 md:py-10 w-full flex justify-between items-center">
+            <div className=" z-100 backdrop-filter backdrop-blur-lg bg-opacity-0 fixed top-0 px-5 md:px-10 lg:px-15 text-amber-50 h-16 lg:h-20 py-4 md:py-8 w-full flex justify-between items-center">
                 <h1 className=" md:text-4xl sm:text-2xl text-xl font-anton text-amber-50">
                     Sudipta <span className="text-[#4ED7F1]">Paul</span>
                 </h1>
