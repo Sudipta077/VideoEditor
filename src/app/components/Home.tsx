@@ -25,7 +25,7 @@ const Home: React.FC = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: false, amount: 0.2 }}
 
-                        className="text-[#4ED7F1] font-sans text-md sm:text-lg md:text-xl">Full Stack Engineer</motion.h2>
+                        className="text-[#4ED7F1] font-sans text-md sm:text-lg md:text-xl">Video Editor</motion.h2>
                     <motion.h1
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
