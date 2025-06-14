@@ -2,12 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Satisfy&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #fff8f0;
-  --devtext: #4ED7F1;
-  --dev: #0f2027;
-  --deve:#1a2f38;
-  --edit: #1c1c1c;
+  --background: #000000;
+  --text:#DBDBDB;
+  --stext:#FFB22C;
 }
 
 @theme inline {
@@ -22,16 +19,14 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --devtext:var(--devtext);
-    --dev: #0f2027;
-    --edit: #1c1c1c;
-
+    
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text);
+
   font-family: sans-serif;
 }
 
@@ -50,6 +45,49 @@ html {
 html,  body {
   overflow-x: hidden;
 }
+
+
+/* From Uiverse.io by milegelu */ 
+.grid-container {
+  position: relative;
+  /* width: 100%; */
+  /* height: 100%; */
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: 
+    linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.grid-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 2;
+}
+
 
 
 

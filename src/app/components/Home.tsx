@@ -11,9 +11,11 @@ import { FaSquareUpwork } from "react-icons/fa6";
 const Home: React.FC = () => {
 
     return (
-        <div className="h-screen md:h-auto lg:h-[710px] bg-dev" id="home">
+        <div className="h-screen grid-container md:h-auto lg:h-[710px] bg-background mx-auto bg-fixed" id="home">
 
-            <div className="bg-dev md:px-15 sm:px-5 px-5 pt-24  flex flex-col-reverse lg:flex-row justify-between items-center">
+            
+
+            <div className="md:px-32 sm:px-5 px-5 pt-32  flex flex-col-reverse lg:flex-row justify-between items-center w-full">
 
 
                 <div className="text-center lg:text-left w-full lg:w-1/2 h-[400px] flex flex-col mt-12 gap-y-4">
@@ -25,7 +27,7 @@ const Home: React.FC = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: false, amount: 0.2 }}
 
-                        className="text-[#4ED7F1] font-sans text-md sm:text-lg md:text-xl">Video Editor</motion.h2>
+                        className="text-[#FFB22C] font-sans text-md sm:text-lg md:text-xl">Video Editor</motion.h2>
                     <motion.h1
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -34,7 +36,7 @@ const Home: React.FC = () => {
                             duration: 0.5,
                         }}
 
-                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px]">I am <span className="text-[#4ED7F1] font-satisfy">Sudipta</span> <span className="font-satisfy">Paul</span></motion.h1>
+                        className="text-4xl sm:text-4g md:text-7xl mt-[-12px]">I am <span className="text-[#FFB22C] font-satisfy">Sudipta</span> <span className="font-satisfy">Paul</span></motion.h1>
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -54,7 +56,7 @@ const Home: React.FC = () => {
                             transition={{
                                 duration: 0.4,
                             }}
-                            href="https://github.com/Sudipta077" target="_blank"><FaGithub title="GitHub Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                            href="https://github.com/Sudipta077" target="_blank"><FaGithub title="GitHub Profile" className="hover:cursor-pointer hover:text-[#FFB22C] transition hover:animate-bounce" />
                         </motion.a>
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
@@ -64,7 +66,7 @@ const Home: React.FC = () => {
                                 duration: 0.6,
                             }}
                             href="https://www.linkedin.com/in/sudipta-paul-106564226/" target="_blank">
-                            <FaLinkedin title="Linedin Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                            <FaLinkedin title="Linedin Profile" className="hover:cursor-pointer hover:text-[#FFB22C] transition hover:animate-bounce" />
                         </motion.a>
                         <motion.a
                             initial={{ opacity: 0, y: 100 }}
@@ -74,7 +76,7 @@ const Home: React.FC = () => {
                                 duration: 0.8,
                             }}
                             href="https://x.com/Sudipta20459564" target="_blank">
-                            <FaXTwitter title="X Profile" className=" hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce" />
+                            <FaXTwitter title="X Profile" className=" hover:cursor-pointer hover:text-[#FFB22C] transition hover:animate-bounce" />
                         </motion.a>
 
                         <motion.a
@@ -85,7 +87,7 @@ const Home: React.FC = () => {
                                 duration: 0.8,
                             }}
                             href="https://www.fiverr.com/s/1qoQE50" target="_blank">
-                            <SiFiverr title="Fiverr Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce text-6xl" />
+                            <SiFiverr title="Fiverr Profile" className="hover:cursor-pointer hover:text-[#FFB22C] transition hover:animate-bounce text-6xl" />
                         </motion.a>
 
 
@@ -97,7 +99,7 @@ const Home: React.FC = () => {
                                 duration: 0.8,
                             }}
                             href="https://www.upwork.com/freelancers/~01b504ee86d4a07568?mp_source=share" target="_blank">
-                            <FaSquareUpwork title="Upwork Profile" className="hover:cursor-pointer hover:text-[#4ED7F1] transition hover:animate-bounce text-4xl" />
+                            <FaSquareUpwork title="Upwork Profile" className="hover:cursor-pointer hover:text-[#FFB22C] transition hover:animate-bounce text-4xl" />
                         </motion.a>
 
 
@@ -117,6 +119,8 @@ const Home: React.FC = () => {
 
 
             </div>
+
+            
 
         </div>
     );
