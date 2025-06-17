@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <div className="z-100 backdrop-filter backdrop-blur-lg fixed  top-5 left-[50%] translate-x-[-50%] px-5 md:px-5 lg:px-5 text-amber-50 h-16 lg:h-20 py-4 md:py-8 w-[80%] flex justify-between items-center rounded-full bg-yellow-200/10">
+            <div className="z-100 backdrop-filter backdrop-blur-lg fixed  top-5 left-[50%] translate-x-[-50%] px-5 md:px-5 lg:px-5 text-amber-50 h-16 lg:h-20 py-4 md:py-8 w-[95%] lg:w-[80%] flex justify-between items-center rounded-full bg-yellow-200/10">
                 {/* <h1 className=" md:text-4xl sm:text-2xl text-xl font-anton text-amber-50">
                     Sudipta <span className="text-[#FFB22C]">Paul</span>
                 </h1> */}
@@ -186,12 +186,12 @@ const Navbar: React.FC = () => {
                         className="w-full backdrop-filter backdrop-blur-lg bg-opacity-0 text-black 
                             py-5 lg:px-15 md:px-10 px-5 z-50 shadow-lg lg:hidden fixed left-0 top-16"
                     >
-                        <ul className="space-y-6 textlg sm:text-lg md:text-xl">
-                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#home">Home</a></li>
-                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#skills">Skills</a></li>
-                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#qualification">Qualification</a></li>
-                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#projects">Projects</a></li>
-                            <li className="cursor-pointer text-amber-50 font-sans"><a href="#contact">Contact</a></li>
+                        <ul className="space-y-6 px-2 mt-2 text-lg sm:text-lg md:text-xl">
+                            <li className="active:text-[#FFB22C] cursor-pointer text-amber-50 font-sans"><a href="#home">Home</a></li>
+                            <li className="active:text-[#FFB22C] cursor-pointer text-amber-50 font-sans"><a href="#skills">Skills</a></li>
+                            <li className="active:text-[#FFB22C] cursor-pointer text-amber-50 font-sans"><a href="#qualification">Qualification</a></li>
+                            <li className="active:text-[#FFB22C] cursor-pointer text-amber-50 font-sans"><a href="#projects">Projects</a></li>
+                            <li className="active:text-[#FFB22C] cursor-pointer text-amber-50 font-sans"><a href="#contact">Contact</a></li>
                         </ul>
                     </motion.div>
                 )}
